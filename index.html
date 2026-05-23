@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zakaria — Beginner Web Developer</title>
+    <meta name="description" content="Portfolio and presentation site for a beginner web developer">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <div class="logo">Zakaria Dev</div>
+            <nav class="main-nav">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <button id="theme-toggle">toggle mode</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Hello — I'm Zakaria</h1>
+                <p class="lead">A beginner web developer building accessible, responsive websites.</p>
+                <div class="hero-actions">
+                    <a class="btn primary" href="#contact">Hire me</a>
+                    <a class="btn ghost" href="#projects">See projects</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="container about">
+            <h2>About Me</h2>
+            <p>I’m learning modern web development and enjoy creating clean user experiences using HTML, CSS and JavaScript.</p>
+                <ul class="facts">
+                    <li>Location: Barcelona, Spain</li>
+                    <li>Focus: Front-end & UI</li>
+                    <li>Open to freelance work and collaboration</li>
+                </ul>
+        </section>
+
+        <section id="skills" class="container skills">
+            <h2>Skills</h2>
+            <div class="skill-grid">
+                <div class="skill">HTML5</div>
+                <div class="skill">CSS3</div>
+                <div class="skill">JavaScript (ES6+)</div>
+                <div class="skill">Responsive Design</div>
+                <div class="skill">Git / GitHub</div>
+                <div class="skill">Basic accessibility</div>
+            </div>
+        </section>
+
+        <section id="projects" class="container projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <article class="card">
+                    <h3>Personal Landing Page</h3>
+                    <p>A simple responsive landing page built with HTML & CSS.</p>
+                </article>
+                <article class="card">
+                    <h3>To‑Do App (JS)</h3>
+                    <p>A small to-do app demonstrating DOM manipulation and localStorage.</p>
+                </article>
+                <article class="card">
+                    <h3>Responsive Gallery</h3>
+                    <p>Image gallery using CSS grid and responsive breakpoints.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class=" contact">
+            <h2>Contact me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder=" your message!" required></textarea>
+                <button type="submit" class="btn primary">Send Message</button>
+            </form>
+            <p>If you'd like to work together, send an email or connect on GitHub.</p>
+            <div class="contact-links">
+                <a class="btn" href="mailto:zchouidli@gmail.com">Email me</a>
+                <a class="btn ghost" href="https://github.com/"zakapro" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">© <span id="year"></span> Zakaria Dev — Beginner Web Developer</div>
+    </footer>  
+    <script src="script.js"></script>
+</body>
+</html>
