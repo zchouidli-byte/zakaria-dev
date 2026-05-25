@@ -103,3 +103,23 @@ body.light-mode #theme-toggle {
   .main-nav{margin-top:12px}
   .hero{text-align:center}
 }
+@media (max-with:768px){
+  .nav-wrap{
+    flex-direction:column;
+    gap:15px;
+    text-align:center;
+    padding:15px 0;
+    }
+    .main-nav{
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+    .container{
+        padding:0 20px;
+    }
+        h1{
+            font-size:2rem;
+        }
+    }
