@@ -2,21 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zakaria — Beginner Web Developer</title>
-    <meta name="description" content="Portfolio and presentation site for a beginner web developer">
+    <meta name="description" content="Portfolio and presentation"> 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="site-header">
         <div class="container nav-wrap">
             <div class="logo">Zakaria Dev</div>
-            <nav class="main-nav">
+            <nav class="main-nav" aria-label="Main navigation">
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
-                <button id="theme-toggle">toggle mode</button>
+                <button id="theme-toggle" aria-pressed="false" aria-label="Toggle color theme">Toggle theme</button>
             </nav>
         </div>
     </header>
@@ -73,18 +73,26 @@
             </div>
         </section>
 
-        <section id="contact" class=" contact">
+        <section id="contact" class="contact">
             <h2>Contact me</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder=" your message!" required></textarea>
+            <form id="contact-form" novalidate>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your Name" required>
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+
                 <button type="submit" class="btn primary">Send Message</button>
+                <div id="form-status" role="status" aria-live="polite" class="form-status" hidden></div>
             </form>
-            <p>If you'd like to work together, send an email or connect on GitHub.</p>
+
+            <p>If you'd like to work together, also connect on GitHub.</p>
             <div class="contact-links">
-                <a class="btn" href="mailto:zchouidli@gmail.com">Email me</a>
-                <a class="btn ghost" href="https://github.com/"zakapro" target="_blank" rel="noopener">GitHub</a>
+                <a class="btn" href="mailto:zchouidli@cfasants.com">Email me</a>
+                <a class="btn ghost" href="https://github.com/zakapro" target="_blank" rel="noopener">GitHub</a>
             </div>
         </section>
     </main>
@@ -95,3 +103,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+ 
